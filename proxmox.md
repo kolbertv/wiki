@@ -16,4 +16,4 @@ qm set 1000 --boot c --bootdisk scsi0
 ```
 * VM - Hardware - Add - Cloudinit drive
 * VM - Cloud-init - set User, Password, IP config
-
+* VM - Cloud-init - Regenerate Image
