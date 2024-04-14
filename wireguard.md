@@ -25,3 +25,4 @@ AllowedIPs = 10.200.10.1/32
 Endpoint = 80.80.80.81:52820
 PersistentKeepalive = 25
 ```
+80.80.80.81 - IP of VPS
