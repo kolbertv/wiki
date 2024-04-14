@@ -26,3 +26,30 @@ stream {
 }
 
 ```
+
+##### Some example for local pc
+```
+http {
+    server {
+        listen 80 proxy_protocol;
+        server_name *.somesite.io;
+
+        location / {
+            proxy_pass http://192.168.0.10:80
+        }
+    }
+    server {
+        listen 80 proxy_protocol;
+        server_name *.somesite.io;
+
+        location / {
+            proxy_pass http://192.168.0.11:80
+        }
+    }
+    server {
+        listen 80 proxy_protocol;
+        server_name 80.80.80.81;
+        return 444
+    }
+}
+```
