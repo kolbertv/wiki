@@ -1,5 +1,5 @@
-### Tunnel from VPS to local pc
-#### Server side (VPS)
+#### Tunnel from VPS to local pc
+##### Server side (VPS)
 
 ```
 [Interface]
@@ -12,7 +12,7 @@ PublicKey = client-public-key
 AllowedIPs = 10.200.1.2/32
 PersistentKeepalive = 25
 ```
-#### Client side(local pc)
+##### Client side(local pc)
 
 ```
 [Interface]
