@@ -20,6 +20,7 @@ qm set 1000 --boot c --bootdisk scsi0
 * VM - Cloud-init - set User, Password, IP config
 * VM - Cloud-init - Regenerate Image
 
+
 #### Create VM from img from https://cloud-images.ubuntu.com/ (console)
 
 * Download img in a console of host machine
