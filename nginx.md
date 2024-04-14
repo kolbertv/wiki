@@ -32,7 +32,7 @@ stream {
 http {
     server {
         listen 80 proxy_protocol;
-        server_name *.somesite.io;
+        server_name *.somesite1.io;
 
         location / {
             proxy_pass http://192.168.0.10:80
@@ -40,7 +40,7 @@ http {
     }
     server {
         listen 80 proxy_protocol;
-        server_name *.somesite.io;
+        server_name *.somesite2.io;
 
         location / {
             proxy_pass http://192.168.0.11:80
