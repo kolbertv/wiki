@@ -5,8 +5,6 @@
 Address = 10.222.10.1/32
 PrivateKey = server-private-key
 ListenPort = 52820
-```
-```
 [Peer]
 PublicKey = client-public-key
 AllowedIPs = 10.222.0.2/32
