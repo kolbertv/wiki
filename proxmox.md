@@ -39,7 +39,10 @@ qm importdisk 1000 jammy-server-cloudimg-amd64.img local-lvm
 ```
 qm set 1000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-1000-disk-0
 ```
-
+* Add Cloud init
+```
+qm set 1000 --ide2 local-lvm:cloudinit 
+```
 
 
 
