@@ -79,3 +79,7 @@ cat .\.ssh\id_rsa.pub
 ```
 add key to VM - Cloud-init - SSH public key
 
+to connect
+```
+ssh root@ip-of-vm
+```
