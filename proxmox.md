@@ -69,11 +69,11 @@ Enable agent
 ```
 * Add public key to SSH
 
-run on client pc (win power shell)
+run on client pc (win powershell)
 ```
 ssh-keygen
 ```
-get public key (win power shell)
+get public key (win powershell)
 ```
 cat .\.ssh\id_rsa.pub
 ```
