@@ -24,11 +24,17 @@ qm set 1000 --boot c --bootdisk scsi0
 #### Create VM from img from https://cloud-images.ubuntu.com/ (Shell of host machine)
 
 * Download img in a console of host machine
-```wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img```
+```
+wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
+```
 * Import img
-```qm importdisk 1000 jammy-server-cloudimg-amd64.img local-lvm```
+```
+qm importdisk 1000 jammy-server-cloudimg-amd64.img local-lvm
+```
 * Atach disk
-```qm set 1000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-1000-disk-0```
+```
+qm set 1000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-1000-disk-0
+```
 
 
 
