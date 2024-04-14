@@ -27,6 +27,10 @@ qm set 1000 --boot c --bootdisk scsi0
 ```
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
 ```
+* Create VM
+```
+qm create 1000 --memory 4096 --net0 virtio,bridge=vmbr0 --agent 1
+```
 * Import img
 ```
 qm importdisk 1000 jammy-server-cloudimg-amd64.img local-lvm
