@@ -15,12 +15,12 @@ events {
 stream {
         server {
                 listen 80.80.80.81:80;
-                proxy_pass 10.200.1.2:80;
+                proxy_pass 10.200.10.2:80;
                 proxy_protocol on;
         }
         server {
                 listen 80.80.80.81:443;
-                proxy_pass 10.200.1.2:443;
+                proxy_pass 10.200.10.2:443;
                 proxy_protocol on;
         }
 }
