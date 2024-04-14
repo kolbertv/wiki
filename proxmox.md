@@ -57,5 +57,13 @@ qm set 1000 --boot c --bootdisk scsi0
 ```
 eth0: \4{eth0}
 ```
+* Install qemu agent
+```
+apt install qemu-guest-agent
+```
+* Enable qemu agent
+```
+ systemctl enable --now qemu-guest-agent
+```
 
 
