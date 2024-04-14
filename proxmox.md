@@ -65,5 +65,14 @@ apt install qemu-guest-agent
 ```
  systemctl enable --now qemu-guest-agent
 ```
-
+* Add public key to SSH
+run on client pc
+```
+ssh-keygen
+```
+get public key
+```
+cat .\.ssh\id_rsa.pub
+```
+add key to VM - Cloud-init - SSH public key
 
