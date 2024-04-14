@@ -1,7 +1,8 @@
 #### Create VM from img from https://cloud-images.ubuntu.com/
 
 * Create VM from GUI
-* VM - Hardware - Detach and Remove Disk
+* VM - Hardware - Detach hard disk
+* VM - Hardware - Remove unused disk
 * Download img in a console of host machine
 ```
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
