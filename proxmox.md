@@ -11,7 +11,7 @@ wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.i
 ```
 qm importdisk 1000 jammy-server-cloudimg-amd64.img local-lvm
 ```
-* Set img as bootdisk
+* Set bootdisk
 ```
 qm set 1000 --boot c --bootdisk scsi0
 ```
@@ -43,8 +43,10 @@ qm set 1000 --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-1000-disk-0
 ```
 qm set 1000 --ide2 local-lvm:cloudinit 
 ```
-
-
+* Set bootdisk
+```
+qm set 1000 --boot c --bootdisk scsi0
+```
 
 
 
