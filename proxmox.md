@@ -51,6 +51,11 @@ qm set 1000 --boot c --bootdisk scsi0
 * VM - Cloud-init - Regenerate Image
 
 ---
+### Configure VM
 
+* Add to file /etc/issue
+```
+eth0: \4{eth0}
+```
 
 
