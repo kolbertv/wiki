@@ -1,6 +1,6 @@
 
 
-#### Delete crypto pro
+#### Uninstall crypto pro
 
 Delete cryptopro
 ```
