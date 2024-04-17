@@ -16,7 +16,7 @@ volumes:
   data:
 ```
 
-#### Mongo db
+#### Mongo db (uncommited for create replica set)
 
 docker-compose.yml
 ```
