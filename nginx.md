@@ -60,7 +60,7 @@ http {
 kubectl create deploy nginx --image nginx:latest
 ```
 
-##### expose nginx
+##### expose nginx using load balancer
 ```
 kubectl expose deploy nginx --port=80 --type=LoadBalancer
 ```
