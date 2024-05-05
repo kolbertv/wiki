@@ -36,3 +36,7 @@ metadata:
   namespace: metallb-system
 
 ```
+##### apply config
+```
+kubectl apply -f  metallb.yaml
+```
