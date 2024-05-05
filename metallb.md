@@ -40,3 +40,8 @@ metadata:
 ```
 kubectl apply -f  metallb.yaml
 ```
+
+##### Check
+```
+kubectl describe ipaddresspools.metallb.io production -n metallb-system
+```
