@@ -8,3 +8,8 @@ kubectl get pods --all-namespaces
 ```
 kubectl get svc
 ```
+
+##### get all resources in cluster
+```
+kubectl get all
+```
