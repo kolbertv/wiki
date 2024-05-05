@@ -1,5 +1,5 @@
 
-##### Install and deploy metalllab
+##### Install and deploy metallb
 ```
 kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.14.5/config/manifests/metallb-native.yaml
 ```
@@ -15,7 +15,7 @@ kubectl get pods -n metallb-system
 ```
 
 
-##### config metalllab
+##### config metallb
 
 ```
 nano metallb.yaml
