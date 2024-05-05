@@ -53,3 +53,14 @@ http {
     }
 }
 ```
+
+#### k3s
+##### install and deploy
+```
+kubectl create deploy nginx --image nginx:latest
+```
+
+##### expose nginx
+```
+kubectl expose deploy nginx --port=80 --type=LoadBalancer
+```
