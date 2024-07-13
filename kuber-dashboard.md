@@ -24,7 +24,7 @@ kubectl -n kubernetes-dashboard create token USER_BAME
 helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard --set 'api.containers.args={--disable-csrf-protection=true}' --set kong.proxy.http.enabled=true
 ```
 
-##### Ingress file for kubernetes
+##### Ingress file for dashboard
 ```
 apiVersion: networking.k8s.io/v1
 kind: Ingress
