@@ -34,7 +34,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: dashboard.kolbert.ru
+  - host: dashboard.example.com
     http:
       paths:
       - path: /
