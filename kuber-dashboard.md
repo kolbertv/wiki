@@ -18,7 +18,7 @@ https://localhost:8001
 kubectl -n kubernetes-dashboard create token USER_BAME
 ```
 
-#### If you has termination of ssl before (nginx proxy)
+#### If you has termination for ssl before (nginx proxy)
 ##### Enable http and disable csrf
 ```
 helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard --set 'api.containers.args={--disable-csrf-protection=true}' --set kong.proxy.http.enabled=true
