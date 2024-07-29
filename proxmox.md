@@ -84,42 +84,42 @@ to connect (User from step VM - Cloud-init.....)
 ssh User@ip-of-vm
 ```
 
-#### Delete cluster
-### Stop cluster
+### Delete cluster
+#### Stop cluster
 ```
 rm -fr /etc/pve/nodes/*
 systemctl stop pve-cluster
 systemctl stop corosync
 ```
 
-### Start cluster as node
+#### Start cluster as node
 ```
 pmxcfs -l
 ```
 
-### Delete config
+#### Delete config
 ```
 rm /etc/pve/corosync.conf
 rm -r /etc/corosync/*
 ```
 
-### Kill process
+#### Kill process
 ```
 killall pmxcfs
 ```
 
-### Delete list of nodes
+#### Delete list of nodes
 ```
 rm -fr /etc/pve/nodes
 ```
 
-### Starting cluster
+#### Starting cluster
 ```
 systemctl start corosync
 systemctl start pve-cluster
 ```
 
-### Restart proxy
+#### Restart proxy
 ```
 service pveproxy restart
 ```
