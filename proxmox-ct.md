@@ -40,7 +40,11 @@ passwd root
 ```
 
 ##### Enable ssh
-change to
+edit file
+```
+nano /etc/ssh/sshd_config
+```
+ change to
 ```
 PermitRootLogin yes
 ```
