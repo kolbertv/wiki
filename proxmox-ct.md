@@ -1,4 +1,4 @@
-#### Add SSH to proxmox container
+#### Add SSH to proxmox container(LXC)
 ##### Root password
 ```
 passwd root
