@@ -10,7 +10,7 @@ lxc.cap.drop:
 lxc.mount.auto: "proc:rw sys:rw"
 ```
 ##### In the container
-/etc/rc.local doesn't exist in the default 20.04 LXC template provided by Rroxmox. Create it with these contents:
+/etc/rc.local doesn't exist in the default 20.04 LXC template provided by Proxmox. Create it with these contents:
 ```
 #!/bin/sh -e
 
