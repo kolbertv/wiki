@@ -1,4 +1,4 @@
-#### Welcome screen for SSH
+#### Welcome screen for SSH add IP
 ##### Create file
 ```
 nano /etc/update-motd.d/01-custom
