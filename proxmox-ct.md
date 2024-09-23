@@ -31,7 +31,7 @@ reboot
 
 
 
-
+----------------
 #### Add SSH to proxmox container(LXC)
 ##### Root password
 ```
