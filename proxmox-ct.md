@@ -1,4 +1,4 @@
-###### Config container
+#### Config container
 ##### Create container (Ubuntu)
 ##### Back to the host
 Edit the config file for the container (/etc/pve/lxc/$ID.conf) and add the following:
