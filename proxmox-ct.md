@@ -1,17 +1,16 @@
-#### Welcome screen for SSH add IP
-##### Create file
+#### Add SSH to proxmox container
+##### Root password
 ```
-nano /etc/update-motd.d/01-custom
-```
-
-##### Add
-```
-#!/bin/sh
-ip a | grep "inet" 
+passwd root
 ```
 
-##### Then
+##### Enable ssh
+change to
 ```
-chmod +x /etc/update-motd.d/01-custom
-reboot
+PermitRootLogin yes
+```
+
+##### Restart SSH
+```
+systemctl restart sshd
 ```
