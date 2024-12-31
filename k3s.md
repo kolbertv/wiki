@@ -1,10 +1,5 @@
 
-
-
-##### Clean after install
+##### install master
 ```
-kubectl delete svc/traefik -n kube-system
-```
-```
-kubectl delete deployment.apps/traefik -n kube-system
+curl -fsL https://get.k3s.io | sh -s - --disable traefik --node-name control.k8s
 ```
