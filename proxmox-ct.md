@@ -9,6 +9,11 @@ lxc.cgroup.devices.allow: a
 lxc.cap.drop:
 lxc.mount.auto: "proc:rw sys:rw"
 ```
+##### run on the host
+```
+pct push <id of container> /boot/config-$(uname -r) /boot/config-$(uname -r)
+```
+
 ##### In the container
 /etc/rc.local doesn't exist in the default 20.04 LXC template provided by Proxmox. Create it with these contents:
 ```
