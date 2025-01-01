@@ -1,3 +1,13 @@
+##### add repo for dashboard
+```
+helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
+```
+
+##### install dashboard by helm
+```
+helm upgrade --install kubernetes-dashboard kubernetes-dashboard/kubernetes-dashboard --create-namespace --namespace kubernetes-dashboard --set 'api.containers.args={--disable-csrf-protection=true}' --set kong.proxy.http.enabled=true
+```
+
 
 #### Proxy dashboard from master node to localhost
 ##### Proxy from master node
