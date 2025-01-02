@@ -1,3 +1,8 @@
+##### export config
+```
+export KUBECONFIG=/etc/rancher/k3s/k3s.yaml
+```
+
 ##### add repo for dashboard
 ```
 helm repo add kubernetes-dashboard https://kubernetes.github.io/dashboard/
