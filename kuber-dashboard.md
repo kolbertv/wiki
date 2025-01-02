@@ -36,7 +36,10 @@ subjects:
   name: admin-user
   namespace: kubernetes-dashboard
 ```
-
+##### get token
+```
+kubectl -n kubernetes-dashboard create token admin-user
+```
 
 
 
